@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+.container{
+ 
+        content: '';
+        background: url(/pngtree-simple-atmospheric-blue-temperature-needle-illustration-background-image_279280.jpg) no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+}
+  h1 {
+    text-align: center;
+    margin-top: 6rem;
+    color: #f7f7f7;
+     font-size: 2.5rem;
+    font-family: 'Domine', serif; 
+     /* font-family: 'Pacifico', cursive;  */
+     /* font-family: 'Roboto', sans-serif; */
+      /* font-family: 'Roboto Slab', serif;   */
+}
+
+.box{
+    height: 350px;
+    width: 350px;
+    margin-top: 200px;
+    margin-left: 35%;
+    border-radius: 15px;
+    background:linear-gradient(#164B60,#3c5f6d);
+    /* background-color: #116D6E; */
+}
+
+  .input-container {
+    display: flex;
+    margin-left: 10%;
+    position: relative;
+    top: 3rem;
+  }
+ .temp{
+  color:#f7f7f7;
+  /* color: #F79327; */
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  position: relative;
+  top: 2.5rem;
+ }
+  .input-container input[type="number"] {
+    width: 120px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    color: #164B60;
+    background-color: rgb(115, 165, 148);
+    
+  }
+  .input-container input[type="number"]:hover {
+    background-color: #04b3f8;
+    color: #f7f7f7;
+  }
+  .input-container select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    width: 100px;
+    
+    background-color: rgb(115, 165, 148);
+  }
+  
+  .input-container select:hover{
+    background-color: #04b3f8;
+    color: #f7f7f7;
+  }
+
+  .convert-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(115, 165, 148);
+    color: #164B60;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 5rem;
+    border-radius:40px ;
+  }
+  .convert-button:hover{
+    background-color: #04b3f8;
+    color: #f7f7f7;
+  }
+
+  .result {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2rem;
+    color: #cbcfd1;
+  
+  }

@@ -1,0 +1,338 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: linear-gradient(to bottom,rgb(37, 37, 37),gray);
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 2rem 7%;
+  opacity: 0.4;
+  background: rgb(138, 134, 134);
+  
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Domine', serif;
+  position: static;
+  color: rgb(231, 245, 245);
+  
+}
+.logo {
+   margin-right: 10rem;
+   font-family: 'Pacifico', cursive;
+}
+.navbar a{
+  margin:10px 25px;
+  text-decoration: none;
+  color: rgb(248, 252, 252);
+  font-size: larger;
+  opacity: 1;
+  font-weight: 800;
+}
+.navbar a:hover{
+  color: rgb(174, 255, 232);
+  text-decoration: underline;
+
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+
+}
+.bar{
+  display: block;
+  width:25px;
+  height:3px;
+  margin:5px auto;
+ 
+}
+
+/*--------------------- HOME-------------------- */
+ .home{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 50px;
+   max-height: 100vh;
+   min-height: 58vh;
+    
+  }
+  .home::before{
+      content: '';
+      background: url(alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg) no-repeat center center/cover;
+      position: absolute;
+      opacity: 0.6;
+      top: 0px;
+      left: 0px;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+  } 
+ .home h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 35%;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Slab', serif;
+  }
+  .home h3{
+      font-size: 1.2rem;
+      margin-right:75%;
+      margin-top: 10rem;
+      color: rgb(178, 211, 206);
+      font-family: 'Roboto Slab', serif;
+}
+.btn{
+   margin-right:70%;
+   margin-top: 2%;
+}
+.btn1{
+  padding: 12px;
+  background:#036572;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  color: aliceblue;
+}
+.btn2{
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 14px;
+  color: #036572;
+}
+
+/* -------------------section2------------------- */
+
+.bg2{
+  
+
+  margin-top: 20rem;
+  height: 300px;
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(4,1fr);
+  margin: 15px;
+}
+
+.grid-item {
+  background-color: rgba(12, 12, 12, 0.8);
+  text-align: center;
+  font-size: 30px;
+  border-radius: 4px;
+  height:200px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  background: transparent;
+}
+.item1 h2{
+  color: rgb(245 249 255);
+  font-size: 2rem;
+  text-align: justify;
+  margin-top: 2rem;
+ 
+}
+.item1 p{
+  font-size: 1.2rem;
+  color: #081f23cc;
+  text-align: justify;
+}
+.item2 i{
+  color: #F2BE22;
+  margin-top: 2rem;
+}
+.item2 h3{
+  color: rgb(193, 204, 204);
+  font-size:1.5rem;
+  margin-top: 2.5rem;
+}
+.grid-item:hover {
+  background-color:#F2BE22 ;
+  color: black;
+}
+
+
+
+/* -------------section3------------------- */
+.about{
+  padding: 9px 4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15px,1fr));
+  grid-gap:2px 3px; 
+  margin-top: 12rem;
+  background: linear-gradient(to left,#f6f4f8, #e9e2e8);
+}
+.about .photo img{
+  height: 80vh;
+  width: 25vw;
+  border-radius: 10px;
+  margin-left: 5rem;
+}
+.discover{
+  display: flex;
+  flex-wrap: wrap;
+  width: 30rem;
+  margin-right: 20rem;
+}
+.discover h3{
+  color: #F2BE22;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 5rem;
+}
+.discover h1{
+  font-size: 2rem;
+  color: rgb(45, 49, 49);
+   margin-bottom: 15rem;
+   font-family: 'Roboto Slab', serif;
+}
+.discover p{
+  color: rgb(104, 122, 122);
+  margin-top: -12rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+/* ------------------SECTION4------------------------- */
+
+.bg4{
+  padding: 9px 4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15px,1fr));
+  grid-gap:2px 3px; 
+  background: linear-gradient(to left,#f6f4f8, #e9e2e8);
+}
+.sec1{
+  width: 100%;
+}
+.bg4 .sec1 h1{
+  color: #222221;
+  margin-top: 4rem;
+  margin-left:2rem;
+  font-size:2rem;
+}
+.sec1 ul{
+  margin-top: 4rem;
+  margin-left: 4rem;
+  color: #022a30;
+  font-size: 1.2rem;
+}
+.sec1 li{
+  margin-top: 1.2rem;
+}
+.sec1 .list h2{
+  color: #e9e2e8;
+  margin-top: 2rem;
+  width: 65%;
+  border-radius: 4px;
+  margin-left: 2rem;
+  padding: 1.2rem;
+  background-color: #F2BE22;
+}
+.sec1 .list ul{
+  list-style-type:decimal-leading-zero;
+  font-size: 1.2rem;
+  color: #036572;
+}
+.sec2 img{
+  height:50vh;
+  width: 25vw;
+  border-radius: 10px;
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+.sec2 h2{
+  font-size: 2rem;
+  color: rgb(45, 49, 49);
+   margin-bottom: 15rem;
+   font-family: 'Roboto Slab', serif;
+}
+.label 
+{
+    display: flex;
+    flex-direction: row;
+
+}
+.skills{
+  margin-top: -12rem;
+  width: 80%;
+}
+.skills label
+{
+    color: rgb(14, 14, 54);
+    float: left;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-right: 8px;
+}
+.skills .percentage
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(7, 29, 57);
+    border-radius: 4px;
+    display: block;
+    margin-top: 5px;
+    border:rgb(12, 29, 69) ;
+}
+.skills .percentage div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #F2BE22;
+}
+
+
+/* -----------------footer----------------- */
+.news input{
+  height: 45px;
+  width: 55%;
+  border: 2px solid white;
+  outline:none;
+  background: rgb(156, 152, 152);
+  color: rgb(5, 5, 5);
+  margin-top: 20px;
+  font-weight: 600;
+}
+.news::placeholder{
+  color: white;
+}
+.news p{
+  margin: 0;
+}
+.fab{
+  font-size:2rem;
+  cursor: pointer;
+  padding-right:5px ;
+}
+
+
+
+
+
+  
